@@ -8,3 +8,4 @@ variable "region" {
   default = "Google Cloud location of resources"
 }
 
+
