@@ -5,7 +5,8 @@ on:
     branches:
       - main
     paths:
-      - '**.rtf'
+      - '**.tf'
+      - '**.tfvars'
   pull_request:
 
 jobs:
@@ -47,5 +48,5 @@ jobs:
       env:
            GOOGLE_CREDENTIALS: ${{ secrets.GOOGLE_CREDENTIALS }}   
 
-           
+            
       
