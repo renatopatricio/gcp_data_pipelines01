@@ -7,3 +7,4 @@ variable "region" {
   type    = string
   default = "Google Cloud location of resources"
 }
+
