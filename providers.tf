@@ -1,6 +1,6 @@
 provider "google" {
-  project = var.project_id
-  region  = var.region
+  project = var.stack-storage-terraform-pipeline01
+  region  = var.us-central1
 }
 
 terraform {
@@ -10,7 +10,7 @@ terraform {
   }
   required_providers {
     google = {
-      source  = "hashicorp/google"
+      source  = "hashico rp/google"
       version = "3.67.0"
     }
   }

@@ -3,7 +3,7 @@ variable "stack-storage-terraform-pipeline01" {
   description = "GCP Terraform lab Stack 01"
 }
 
-variable "us-central1" {
+variable "region" {
   type    = string
   default = "Google Cloud location of resources"
 }
