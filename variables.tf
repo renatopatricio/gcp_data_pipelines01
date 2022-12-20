@@ -1,4 +1,4 @@
-variable "stack-storage-terraform-pipeline01" {
+variable "project_id" {
   type        = string
   description = "GCP Terraform lab Stack 01"
 }

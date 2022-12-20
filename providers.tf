@@ -1,6 +1,6 @@
 provider "google" {
-  project = var.stack-storage-terraform-pipeline01
-  region  = var.us-central1
+  project = var.project_id
+  region  = var.region
 }
 
 terraform {
