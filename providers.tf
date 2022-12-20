@@ -10,10 +10,11 @@ terraform {
   }
   required_providers {
     google = {
-      source  = "hashico rp/google"
+      source  = "hashicorp/google"
       version = "3.67.0"
     }
   }
 }
+
 
 
