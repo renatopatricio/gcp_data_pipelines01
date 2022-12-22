@@ -2,9 +2,9 @@
 
 module "bigquery-dataset-gasolina" {
   source  = "./modules/bigquery"
-  dataset_id                  = "gasolina_brasil"
-  dataset_name                = "gasolina_brasil"
-  description                 = "Dataset a respeito do histórico de preços da Gasolina no Brasil a partir de 2004"
+  dataset_id                  = "gasolina_brasil_rp"
+  dataset_name                = "gasolina_brasil_rp"
+  description                 = "Dataset a respeito do histórico de preços da Gasolina no Brasil a partir de 2004_rp"
   project_id                  = var.project_id
   location                    = var.region
   delete_contents_on_destroy  = true
@@ -49,7 +49,7 @@ module "bigquery-dataset-gasolina" {
 module "bucket-raw" {
   source  = "./modules/gcs"
 
-  name       = "tf-pipeline-stack-combustiveis-brasil-raw"
+  name       = "tbf-pipeline-stack-combustiveis-brasil-raw"
   project_id = var.project_id
   location   = var.region
 }
@@ -57,7 +57,7 @@ module "bucket-raw" {
 module "bucket-curated" {
   source  = "./modules/gcs"
 
-  name       = "tf-pipeline-stack-combustiveis-brasil-curated"
+  name       = "tbf-pipeline-stack-combustiveis-brasil-curated"
   project_id = var.project_id
   location   = var.region
 }
@@ -65,7 +65,7 @@ module "bucket-curated" {
 module "bucket-pyspark-tmp" {
   source  = "./modules/gcs"
 
-  name       = "tf-pipeline-stack-combustiveis-brasil-pyspark-tmp"
+  name       = "tbf-pipeline-stack-combustiveis-brasil-pyspark-tmp"
   project_id = var.project_id
   location   = var.region
 }
@@ -73,7 +73,7 @@ module "bucket-pyspark-tmp" {
 module "bucket-pyspark-code" {
   source  = "./modules/gcs"
 
-  name       = "tf-pipeline-stack-combustiveis-brasil-pyspark-code"
+  name       = "tbf-pipeline-stack-combustiveis-brasil-pyspark-code"
   project_id = var.project_id
   location   = var.region
 }
