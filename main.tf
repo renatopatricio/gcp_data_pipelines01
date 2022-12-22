@@ -1,5 +1,5 @@
-resource "google_storage_bucket1" "gcs_bucket1" {
-    name = "teste-bucket-random-renato1"
+resource "google_storage_bucket" "gcs_bucket" {
+    name = "teste-bucket-random-renato"
     location = var.region
 }
 
