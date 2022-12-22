@@ -5,7 +5,7 @@ provider "google" {
 
 terraform {
   backend "gcs" {
-    bucket = "teste-bucket-random-renato"
+    bucket = "teste-bucket-random-renato1"
     prefix = "terraform/state"
   }
   required_providers {
