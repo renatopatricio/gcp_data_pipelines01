@@ -1,7 +1,7 @@
 
 
 module "bigquery-dataset-gasolina" {
-  source  = "./modules/bigquery"
+  source  = "C:\Users\renato.patricio\OneDrive - COMPASSO TECNOLOGIA LTDA\Documentos\Projetos\Stack - GCP Terraform\gcp_data_pipelines01\modules\bigquery"
   dataset_id                  = "gasolina_brasil_rp"
   dataset_name                = "gasolina_brasil_rp"
   description                 = "Dataset a respeito do histórico de preços da Gasolina no Brasil a partir de 2004_rp"
